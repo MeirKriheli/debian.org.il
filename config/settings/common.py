@@ -12,10 +12,12 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 from __future__ import absolute_import, unicode_literals
 
 import environ
+import sys
 
 ROOT_DIR = environ.Path(__file__) - 3  # (/a/b/myfile.py - 4 = /)
 APPS_DIR = ROOT_DIR.path('src')
 
+sys.path.insert(0, APPS_DIR)
 
 env = environ.Env()
 
