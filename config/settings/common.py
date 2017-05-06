@@ -219,7 +219,7 @@ LOGGING = {
             'level': 'ERROR',
             'class': 'logging.FileHandler',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': LOG_DIR + 'error.log',
+            'filename': LOG_DIR + '/error.log',
             'maxBytes': 20 * 1024 * 1024,
             'formatter': 'verbose'
         },
