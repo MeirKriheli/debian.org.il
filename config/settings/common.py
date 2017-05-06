@@ -185,6 +185,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 LOG_DIR = env("LOG_DIR", default=str(ROOT_DIR('logs')))
 
+
+# Location of root django.contrib.admin URL, use {% url 'admin:index' %}
+ADMIN_URL = r'^admin/'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

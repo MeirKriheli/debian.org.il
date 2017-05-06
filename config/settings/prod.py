@@ -26,6 +26,5 @@ STATIC_ROOT = str(ROOT_DIR('assets'))
 
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['debian.org.il'])
 
-# ------------------------------------------------------------------------------
-# LOGGING CONFIGURATION
-# ------------------------------------------------------------------------------
+# Custom Admin URL, use {% url 'admin:index' %}
+ADMIN_URL = env('DJANGO_ADMIN_URL')
