@@ -20,7 +20,7 @@ APPS_DIR = ROOT_DIR.path('apps')
 sys.path.insert(0, str(APPS_DIR))
 
 env = environ.Env()
-environ.Env.read_env()  # reading .env file
+environ.Env.read_env(ROOT_DIR('.env'))  # reading .env file
 
 # ------------------------------------------------------------------------------
 # SECRET CONFIGURATION
