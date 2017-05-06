@@ -221,7 +221,6 @@ LOGGING = {
         },
         'file_error': {
             'level': 'ERROR',
-            'class': 'logging.FileHandler',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': LOG_DIR + '/error.log',
             'maxBytes': 20 * 1024 * 1024,
