@@ -17,7 +17,7 @@ import sys
 ROOT_DIR = environ.Path(__file__) - 3  # (/a/b/myfile.py - 4 = /)
 APPS_DIR = ROOT_DIR.path('apps')
 
-sys.path.insert(0, APPS_DIR)
+sys.path.insert(0, str(APPS_DIR))
 
 env = environ.Env()
 environ.Env.read_env()  # reading .env file
