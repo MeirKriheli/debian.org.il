@@ -55,17 +55,13 @@ pre {
     color: #fff;
 }
 
-.brand-title,
-.brand-tagline {
-    margin: 0;
-}
-
 .brand-title {
+    margin: 0;
     text-transform: uppercase;
 }
-.brand-tagline {
-    font-weight: 300;
-    color: rgb(176, 202, 219);
+
+.brand-title span {
+  color: rgb(61, 146, 201);
 }
 
 .nav-list {
