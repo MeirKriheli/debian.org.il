@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from taggit.managers import TaggableManager
@@ -25,6 +26,5 @@ class Tip(models.Model):
     def __str__(self):
         return self.slug
 
-    # FIXME use name space with reverse here
     def get_absolute_url(self):
-        return "/tips/%s" % self.slug
+        return reverse('tips:tip', kwargs={'slug': self.slug})

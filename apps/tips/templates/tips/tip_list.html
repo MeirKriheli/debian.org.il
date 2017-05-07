@@ -1,0 +1,24 @@
+{% extends "base.html" %}{% load i18n %}
+
+{% block title %}{% trans "Tips" %}{% endblock title %}
+
+{% block content %}
+  <h1>{% trans "Tips" %}</h1>
+  <ul>
+    {% for tip in object_list %}
+    <li>
+      <h3><a href="{{ tip.get_absolute_url }}">{{ tip.title }}</a></h3>
+      <div>
+        {{tip.content|safe|striptags|truncatewords:15}}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% if is_paginated %}
+    <nav class="paginator">
+      {% for page in paginator.page_range  %}
+      <a class="pure-button{% if page == page_obj.number %} pure-button-active{% endif %}" href="?page={{page}}">{{page}}</a>
+      {% endfor %}
+    </nav>
+  {% endif %}
+{% endblock content %}

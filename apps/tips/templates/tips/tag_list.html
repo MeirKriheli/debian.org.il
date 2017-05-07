@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% load i18n %}
+
+{% block title %} {% trans "Tips by Tag" %} &ndash; {{ object.name }} {% endblock title %}
+
+{% block content %}
+  <h3><a href="{% url 'tips:index' %}">{% trans "Tips" %}</a> {% trans "by tag" %}</h3>
+  <h1>{{ object.name }}</h1>
+  <ul>
+    {% for tagged_item in tagged_items %}
+    <li>
+      <h3>
+        <a href="{{ tagged_item.content_object.get_absolute_url }}">{{ tagged_item.content_object.title }}</a>
+      </h3>
+      <div>
+        {{tagged_item.content_object.content|safe|striptags|truncatewords:15}}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

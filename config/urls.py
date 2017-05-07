@@ -12,6 +12,9 @@ urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
     url(
+        r'^tips/',
+        include('tips.urls', namespace='tips')),
+    url(
         r'^',
         include('pages.urls', namespace='pages')),
 ]

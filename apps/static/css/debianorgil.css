@@ -59,6 +59,7 @@ pre {
 .brand-tagline {
     margin: 0;
 }
+
 .brand-title {
     text-transform: uppercase;
 }
@@ -104,6 +105,10 @@ pre {
 
 .content {
     padding: 2em 1em 0;
+}
+
+.paginator {
+  text-align: center;
 }
 
 .post {
@@ -162,6 +167,23 @@ pre {
     text-shadow: 0 1px 1px #333;
 }
 
+.tags a {
+    background: transparent;
+    border: 1px solid rgb(61, 146, 201);
+    color: rgb(61, 146, 201);
+    margin-bottom: 1ex;
+    letter-spacing: 0.05em;
+    font-size: 80%;
+    border-radius: 20px;
+}
+
+.tags a:hover,
+.tags a:focus {
+    background: rgb(61, 146, 201);
+    color: #fff;
+    text-decoration: none;
+}
+
 .footer {
     padding: 1em 0;
 }
@@ -193,5 +215,9 @@ pre {
 
     .footer {
         text-align: center;
+    }
+
+    .md-padded {
+      padding-right: 3em;
     }
 }
