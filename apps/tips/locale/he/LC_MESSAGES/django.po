@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-07 12:38+0300\n"
-"PO-Revision-Date: 2017-05-07 02:27+0300\n"
+"PO-Revision-Date: 2017-05-07 12:41+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -16,27 +16,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: apps/tips/apps.py:7 apps/tips/models.py:22
+msgid "Tips"
+msgstr "טיפים"
 
-#: apps/pages/apps.py:7 apps/pages/models.py:13
-msgid "Pages"
-msgstr "עמודים"
-
-#: apps/pages/models.py:6
+#: apps/tips/models.py:8
 msgid "Link for the url"
 msgstr "קישור עובר ה-url"
 
-#: apps/pages/models.py:7
+#: apps/tips/models.py:9
 msgid "Title"
 msgstr "כותרת"
 
-#: apps/pages/models.py:8
+#: apps/tips/models.py:10
 msgid "Content"
 msgstr "תוכן"
 
-#: apps/pages/models.py:9
-msgid "Show in menu"
-msgstr "מצג בתפריט"
+#: apps/tips/models.py:11
+msgid "Added at"
+msgstr "נוסף בתאריך"
 
-#: apps/pages/models.py:12
-msgid "Page"
-msgstr "עמוד"
+#: apps/tips/models.py:13
+msgid "Contriuted by"
+msgstr "נשלח על ידי"
+
+#: apps/tips/models.py:15
+msgid "Hits"
+msgstr "כניסות"
+
+#: apps/tips/models.py:17
+msgid "Draft"
+msgstr "טיוטה"
+
+#: apps/tips/models.py:21
+msgid "Tip"
+msgstr "טיפ"

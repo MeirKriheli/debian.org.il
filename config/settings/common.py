@@ -52,6 +52,7 @@ LOCAL_APPS = (
     # local apps here
     'pages',
     'links',
+    'tips',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

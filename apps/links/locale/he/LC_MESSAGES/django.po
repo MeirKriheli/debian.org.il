@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-07 11:41+0300\n"
+"POT-Creation-Date: 2017-05-07 12:38+0300\n"
 "PO-Revision-Date: 2017-05-07 11:41+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,46 +17,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:7 models.py:26
+#: apps/links/apps.py:7 apps/links/models.py:28
 msgid "Links"
 msgstr "קישורים"
 
-#: models.py:5
+#: apps/links/models.py:6
 msgid "Hebrew"
 msgstr "עברית"
 
-#: models.py:6
+#: apps/links/models.py:7
 msgid "English"
 msgstr "אנגלית"
 
-#: models.py:13
+#: apps/links/models.py:14
 msgid "Link for the url"
 msgstr "קישור עובר ה-url"
 
-#: models.py:14
+#: apps/links/models.py:15
 msgid "Destination URL"
 msgstr "קישור ביעד"
 
-#: models.py:15
+#: apps/links/models.py:16
 msgid "Added at"
 msgstr "נוסף בתאריך"
 
-#: models.py:17
+#: apps/links/models.py:18
 msgid "Title"
 msgstr "כותרת"
 
-#: models.py:18
+#: apps/links/models.py:19
 msgid "Description"
 msgstr "תיאור"
 
-#: models.py:19
+#: apps/links/models.py:20
 msgid "Hits"
 msgstr "כניסות"
 
-#: models.py:21
+#: apps/links/models.py:22
 msgid "Link Language"
 msgstr "שפת הקישור"
 
-#: models.py:25
+#: apps/links/models.py:27
 msgid "Link"
 msgstr "קישור"
