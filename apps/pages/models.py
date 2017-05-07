@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -15,10 +16,9 @@ class Page(models.Model):
     def __str__(self):
         return self.slug
 
-    # FIXME use name space with reverse here
     def get_absolute_url(self):
         """ returns url for the page. index is a special case """
         if self.slug == 'index':
-            return '/'
+            return reverse('pages:index')
         else:
-            return '/%s' % self.slug
+            return reverse('pages:page', kwargs={'slug': self.slug})
