@@ -45,6 +45,7 @@ DJANGO_APPS = (
 THIRD_PARTY_APPS = (
     # third paty apps here
     'django_extensions',
+    'taggit',
 )
 
 LOCAL_APPS = (
