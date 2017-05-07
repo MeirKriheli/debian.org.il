@@ -18,7 +18,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # STATIC CONFIGURATION
 # ------------------------------------------------------------------------------
 
-STATIC_ROOT = str(ROOT_DIR('assets'))
+STATIC_ROOT = env('DJANGO_STATIC_ROOT')
 
 # ------------------------------------------------------------------------------
 # SITE CONFIGURATION
