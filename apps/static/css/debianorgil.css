@@ -20,6 +20,20 @@ h3 {
     font-weight: 100;
 }
 
+pre {
+    direction: ltr;
+    text-align: left;
+    overflow : auto;
+    font-size: 11pt;
+    width : 90%;
+    margin: 10px auto;
+    padding: 4px;
+    border: 1px #0080c0 solid;
+    background: rgb(176, 202, 219);
+    color: black;
+}
+
+
 /* LAYOUT CSS */
 .pure-img-responsive {
     max-width: 100%;
