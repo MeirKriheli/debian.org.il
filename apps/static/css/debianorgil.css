@@ -109,10 +109,12 @@ pre {
 .post {
     padding-bottom: 2em;
 }
-.post-title {
+
+.content h1 {
     font-size: 2em;
-    color: #222;
     margin-bottom: 0.2em;
+    color: rgb(61, 79, 93);
+
 }
 .post-avatar {
     border-radius: 50px;
