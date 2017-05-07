@@ -53,6 +53,9 @@ pre {
 .sidebar {
     background: rgb(61, 79, 93);
     color: #fff;
+    background-image: url(../img/debian.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
 }
 
 .brand-title {
@@ -207,6 +210,7 @@ pre {
         position: fixed;
         top: 0;
         bottom: 0;
+        background-position: 50% 10%;
     }
 
     .footer {
