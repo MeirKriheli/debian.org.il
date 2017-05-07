@@ -51,6 +51,7 @@ THIRD_PARTY_APPS = (
 LOCAL_APPS = (
     # local apps here
     'pages',
+    'links',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
