@@ -12,9 +12,8 @@ urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
     url(
-        regex=r'^$',
-        view=TemplateView.as_view(template_name='base.html'),
-        name="home"),
+        r'^',
+        include('pages.urls', namespace='pages')),
 ]
 
 
@@ -23,4 +22,3 @@ if settings.DEBUG:
     urlpatterns = [
         url(r'^__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns
-
