@@ -6,6 +6,9 @@
 
 body {
   direction: rtl;
+  font-family: "Bellefair", Georgia, "Cambria", serif;
+  color: #444;
+  line-height: 1.5em;
 }
 a {
     text-decoration: none;
@@ -125,11 +128,7 @@ pre {
     float: right;
     margin-left: 1em;
 }
-.post-description {
-    font-family: Georgia, "Cambria", serif;
-    color: #444;
-    line-height: 1.8em;
-}
+
 .post-meta {
     color: #999;
     font-size: 90%;
