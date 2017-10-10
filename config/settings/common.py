@@ -193,6 +193,9 @@ LOG_DIR = env("LOG_DIR", default=str(ROOT_DIR('logs')))
 # Location of root django.contrib.admin URL, use {% url 'admin:index' %}
 ADMIN_URL = r'^admin/'
 
+# Will be set as site's admin in urls.py
+ADMIN_SITE_HEADER = 'debian.org.il'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

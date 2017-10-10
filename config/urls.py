@@ -8,6 +8,8 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 
+admin.site.site_header = settings.ADMIN_SITE_HEADER
+
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
