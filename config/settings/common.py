@@ -46,6 +46,7 @@ THIRD_PARTY_APPS = (
     # third paty apps here
     'django_extensions',
     'taggit',
+    'ckeditor',
 )
 
 LOCAL_APPS = (
@@ -271,3 +272,24 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+# CKEditor configuration
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'width': 850,
+        'allowedContent': True,
+        'toolbar_Custom': [
+            ['Format'],
+            ['Bold', 'Italic', 'Underline', 'SpecialChar'],
+            ['Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'],
+            ['Link', 'Unlink', 'Anchor'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],
+            ['Image', 'Table', 'HorizontalRule'],
+            ['TextColor', 'BGColor'],
+            ['Source'],
+        ],
+    }
+}

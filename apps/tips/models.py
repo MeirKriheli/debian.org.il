@@ -1,3 +1,4 @@
+from ckeditor.fields import RichTextField
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -8,7 +9,7 @@ class Tip(models.Model):
 
     slug = models.SlugField(_('Link for the url'))
     title = models.CharField(_('Title'), max_length=100)
-    content = models.TextField(_('Content'))
+    content = RichTextField(_('Content'))
     create_date = models.DateTimeField(_('Added at'), auto_now_add=True,
                                        blank=True, db_index=True)
     contributor = models.CharField(_('Contriuted by'), max_length=100,

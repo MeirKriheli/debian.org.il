@@ -1,3 +1,4 @@
+from ckeditor.fields import RichTextField
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from taggit.managers import TaggableManager
@@ -16,7 +17,7 @@ class Link(models.Model):
     create_date = models.DateTimeField(_('Added at'), auto_now_add=True,
                                        blank=True, db_index=True)
     title = models.CharField(_('Title'), max_length=100)
-    description = models.TextField(_('Description'), blank=True)
+    description = RichTextField(_('Description'), blank=True)
     hits = models.IntegerField(_('Hits'), editable=False, null=True,
                                db_index=True, default=0)
     language = models.CharField(_('Link Language'), max_length=5, blank=True,

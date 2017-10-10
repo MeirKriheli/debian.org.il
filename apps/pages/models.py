@@ -1,3 +1,4 @@
+from ckeditor.fields import RichTextField
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -6,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 class Page(models.Model):
     slug = models.SlugField(_('Link for the url'))
     title = models.CharField(_('Title'), max_length=100)
-    content = models.TextField(_('Content'))
+    content = RichTextField(_('Content'))
     in_menu = models.BooleanField(_('Show in menu'), default=True)
 
     class Meta:
