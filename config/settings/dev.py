@@ -30,7 +30,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY", default='CHANGEME!!!')
 # DJANGO DEBUG TOOLBAR
 # ------------------------------------------------------------------------------
 # https://django-debug-toolbar.readthedocs.org/en/1.3.2/
-MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
+MIDDLEWARE += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
 INSTALLED_APPS += ('debug_toolbar', )
 
 INTERNAL_IPS = ('127.0.0.1', '10.0.2.2',)

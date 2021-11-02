@@ -2,6 +2,7 @@ from django.conf.urls import url
 
 from .views import TipsIndexView, TipDetailView, TipsByTagView
 
+app_name = 'tips'
 
 urlpatterns = [
     url(

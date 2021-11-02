@@ -3,7 +3,7 @@
 debian.org.il URL Configuration
 """
 from django.conf import settings
-from django.conf.urls import include, url
+from django.urls import include, path
 from django.contrib import admin
 
 
@@ -11,15 +11,15 @@ admin.site.site_header = settings.ADMIN_SITE_HEADER
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
-    url(settings.ADMIN_URL, include(admin.site.urls)),
-    url(
-        r'^links/',
+    path(settings.ADMIN_URL, admin.site.urls),
+    path(
+        r'links/',
         include('links.urls', namespace='links')),
-    url(
-        r'^tips/',
+    path(
+        r'tips/',
         include('tips.urls', namespace='tips')),
-    url(
-        r'^',
+    path(
+        r'',
         include('pages.urls', namespace='pages')),
 ]
 
@@ -27,5 +27,5 @@ urlpatterns = [
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns = [
-        url(r'^__debug__/', include(debug_toolbar.urls)),
+        path(r'__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns

@@ -63,13 +63,12 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIDDLEWARE CONFIGURATION
 # ------------------------------------------------------------------------------
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -192,7 +191,7 @@ LOG_DIR = env("LOG_DIR", default=str(ROOT_DIR('logs')))
 
 
 # Location of root django.contrib.admin URL, use {% url 'admin:index' %}
-ADMIN_URL = r'^admin/'
+ADMIN_URL = r'admin/'
 
 # Will be set as site's admin in urls.py
 ADMIN_SITE_HEADER = 'debian.org.il'
